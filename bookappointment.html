@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+	<link rel="stylesheet" href="index2.css">
+	<title>Book Appointment</title>
+</head>
+<body>
+<!----Navbar page----->
+<nav class="navbar navbar-expand-md fixed-top navbar-custom">
+  <img src="Logo (2).png" class="ml-5" style="width:80px;height:60px;">
+  <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link navbar-custom" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navbar-custom" href="services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about us.html">About Us</a>
+      </li>
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services Details
+        </a>
+        <div class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown" id="dropdown1">
+          <a class="dropdown-item" href="bridle_makeup.html">Bridle Makeup</a>
+          <a class="dropdown-item" href="body_massage.html">Body Massage</a>
+          <a class="dropdown-item" href="nail_treatment.html">Nail Treatment</a>
+		  <a class="dropdown-item" href="hair_style.html">Hair Style</a>
+          <a class="dropdown-item" href="facial.html">Facial</a>
+          <a class="dropdown-item" href="threading.html">Threading</a>
+        </div>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="bookappointment.html">Book Appointment</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="contactus.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>  
+</nav>
+
+<!----Appointment----->
+<div class="container-fluid" id="appointment">
+<h1>Make an Appointment</h1>
+	<p>Planning a visit to the Beauty World? Look no further! Booking an appointment at your nearest Beauty World is now just a tap away!</p>
+<div class="row">
+<div class="col">
+<form class="ml-5" action="/action_page.php" method="post">
+	<div class="form-group row">
+    <label for="fname" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="name" class="form-control" id="fname" required>
+    </div>
+	</div>
+  <div class="form-group row">
+    <label for="email" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="number" class="col-sm-2 col-form-label">Number</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" required>
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Choose Services:</label>
+      <div class="col-sm-10">
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="service1">
+				<label class="form-check-label" for="service1">
+					Bridle Makeup
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="service2">
+				<label class="form-check-label" for="service2">
+					Body Massage
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="service3">
+				<label class="form-check-label" for="service3">
+					Nail Treatment
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="service4">
+				<label class="form-check-label" for="service4">
+					Hair Style
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="service5">
+				<label class="form-check-label" for="service5">
+					Facial
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="service6">
+				<label class="form-check-label" for="service6">
+					Threading
+				</label>
+			</div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <label for="name" class="col-sm-4 col-form-label">Select Date of Appointment</label>
+    <div class="col-sm-10">
+      <input type="date" class="form-control" required>
+    </div>
+  </div>
+	<div class="form-group row">
+	<div class="col-sm-10">
+		<button class="form-control"><a href="bookappointment.html">Book Appointment</a></button>
+	</div>
+	</div>
+</form>
+</div>	
+</div>
+</div>
+
+<!----Footer----->
+<div class="container-fluid" id="footer">
+	<div class="row">
+	<div class="col-md-3">
+		<h4>Links</h4>
+		<a href="home.html">Home</a><br>
+		<a href="services.html">Services</a><br>
+		<a href="about us.html">About Us</a><br>
+		<a href="bookappointment.html">Book Appointment</a><br>
+        <a href="contactus.html">Contact Us</a>
+	</div>
+	<div class="col-md-3">
+		<h4>Address:</h4>
+		<p>Plot no.112,Chaityna Nagar,<br>opp.IGM center,Nari Road,<br>Nagpur-440026.<br>Telephone: +918007582661</p>
+	</div>
+	<div class="col-md-3">
+		<h4>Hours:</h4>
+		<p>Monday: 10am-5pm</br>Tuesday: 10am-5pm</br>Wednesday: 10am-5pm</br>Thursday: 10am-5pm</br>Friday: 10am-5pm</br>Saturday: 10am-5pm</br>Sunday: Closed</p>
+	</div>
+	<div class="col-md-3">
+		<h4><a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+			<a href="https://www.whatsapp.com/?lang=en" target="blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+	</div>
+</div>
+</div>
+<div class="container-fluid" id="footer1">
+<div class="row">
+<div class="col"><p>© 2021 All Rights Reserved by Beauty World</p></div>
+</div>
+</div>
+</body>
+</html>
